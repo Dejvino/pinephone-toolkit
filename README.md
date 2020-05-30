@@ -35,6 +35,20 @@ $ pptk-cpu-sleep get
 disabled
 ```
 
+### vibrate
+Controls the vibrator to play a vibration pattern.
+```
+# vibrate for 1 second
+$ pptk-vibrate 1000
+
+# vibrate for 500 ms, wait for 500 ms, repeat this pattern 5 times
+# resulting in an alternating vibration for 5 seconds in total
+$ pptk-vibrate 500 500 5
+
+# 6 short vibrations followed by 3 long vibrations
+$ pptk-vibrate 300 200 6 && pptk-vibrate 1500 500 3
+```
+
 ## Build & Install
 ```
 $ meson build
