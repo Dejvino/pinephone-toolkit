@@ -24,6 +24,17 @@ $ pptk-led set red 0
 $ pptk-led set flash 255
 ```
 
+### cpu-sleep
+Puts secondary CPUs to sleep to save energy. Wakes them up to gain more CPU power.
+```
+$ pptk-cpu-sleep enable
+$ pptk-cpu-sleep get
+enabled
+$ pptk-cpu-sleep disable
+$ pptk-cpu-sleep get
+disabled
+```
+
 ## Build & Install
 ```
 $ meson build
