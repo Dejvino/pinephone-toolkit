@@ -8,7 +8,7 @@
 #include <linux/input.h>
 
 static char *argv0 = "./vibrate";
-static char *vibrator_file = "/dev/input/event4";
+static char *vibrator_file = "/dev/input/by-path/platform-vibrator-event";
 
 void print_usage()
 {
